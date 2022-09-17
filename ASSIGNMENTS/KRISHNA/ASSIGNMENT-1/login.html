@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+                font-family: sans-serif;
+                box-sizing: border-box;
+            }
+            body
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            .container
+            {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transform: scale(1.25);
+            }
+            h1
+            {
+                position: relative;
+                top: -20px;
+                font-size: 20px;
+                margin: 20px;
+            }
+            a
+            {
+                text-decoration: none;
+                color: #4696d1;
+            }
+            label,p
+            {
+                font-size: 10px;
+                position: relative;
+            }
+            #name,#email,#mobile,#state,#country
+            {
+                left: -65px;
+            }
+            #mobno
+            {
+                left: -55px;
+            }
+            label
+            {
+                margin-bottom: 5px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+            p:nth-child(2)
+            {
+                right: 0px;
+                margin: 20px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+            p
+            {
+                right: -50px;
+                margin-bottom: 20px;
+            }
+            button
+            {
+                position: relative;
+                padding: 7px;
+                width: 175px;
+                background-color: #4696d1;
+                color: #fff;
+                border: 1px solid #4696d1;
+                border-radius: 3px;
+                font-size: 10px;
+                cursor: pointer;
+            }
+            button:hover
+            {
+                background-color: #357aab;
+                border: 1px solid #357aab;
+            }
+            
+            
+        </style>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+            <p id="place"></p>
+
+        <label id="name">Name</label>
+        <input type="text" id="name" required>
+        <br>
+        <label id="email">Email</label>
+        <input type="text" id="email" required>
+        <br>
+        <label id="mobile">Mobile</label>
+        <input type="text" id="mobile" required>
+        <br>
+        <label id="state">State</label>
+        <input type="text" id="state" required>
+        <br>
+        <label id="country">Country</label>
+        <input type="text" id="country" required>
+
+        <br>
+    
+            <!-- <p><a href="#">Forgot password?</a></p> -->
+            <button onclick="check()">
+                <span>Login</span>
+            </button>
+            
+        </div>
+    </body>
+</html>
